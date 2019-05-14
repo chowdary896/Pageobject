@@ -14,7 +14,7 @@ public class Loginapplication {
 	@Test
 	public void Login()
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		RediffLoginpage rd=new RediffLoginpage(driver);
@@ -26,7 +26,7 @@ public class Loginapplication {
 		rh.Search().sendKeys("rediff");
 		rh.Submit().click();
 		
-		
+		driver.close();
 		
 		
 		
